@@ -1,0 +1,257 @@
+:root{
+    --dark-blue : hsl(243, 87%, 12%);
+    --saturated-blue: hsl(238, 22%, 44%);
+    --bright-blue: hsl(224, 93%, 58%);
+    --moderate-cyan: hsl(170, 45%, 43%);
+    --grayish-blue : hsl(240, 75%, 98%);
+    --light-gray: hsl(0, 0%, 75%);
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    margin-right: 0 !important;
+    margin-left: 0 !important;
+}
+
+header,.margin_gap{
+    width:90%;
+    margin: 1rem auto;
+}
+header{
+    font-family: 'Raleway', sans-serif;
+}
+
+.brand_logo{
+    max-width: 100%;
+    padding: 0.8rem 0;
+}
+
+nav, nav ul.right-links{
+    display: flex;
+}
+
+nav ul.right-links{
+    width:100%;
+    display:flex;
+    justify-content: flex-end;
+}
+
+ul{
+    list-style-type: none;
+}
+
+nav ul li{
+    display: block;
+}
+
+nav ul a{
+    color: #000;
+}
+
+a{
+    text-decoration:none;
+}
+
+.white_color{
+    color:#fff;
+}
+
+.light_gray{
+    color: var(--light-gray);
+}
+
+.bold{
+    font-weight: bold;
+}
+
+.block{
+    display:block;
+}
+
+
+.content_01 .one img, .content_02 img{
+    max-width: 100%;
+    
+}
+
+.content_02{
+    background: var(--grayish-blue);
+    border-radius: 75%/100px 75px 0px 0;
+    margin-top:6rem;
+}
+
+.content_03{
+    background: var(--saturated-blue);
+    margin-top: -1rem !important;
+}
+
+.content_04{
+    background: var(--dark-blue);
+    margin-top: -1rem !important;
+    color:#ffffff;
+}
+
+.content_01 .Email_box{
+    margin-top: 0.7rem;
+}
+
+.contents{
+    padding: 5rem 0 2rem 0;
+}
+
+.contents .card{
+    width: 243px;
+    background: white;
+    font-size: 12px;
+    margin-top: 2.5rem;
+    margin-bottom: 2rem;
+    border-radius:0.3rem;
+    box-shadow: 1px 1px 5px 4px #00000063;
+}
+
+.contents .card_body{
+    padding: 0.9rem;
+}
+
+.contents .card .info{
+    display:flex;
+}
+
+.profile_img{
+    border-radius: 50%;
+    height: 5vh;
+}
+
+.contents .box_four ul{
+    display:flex;
+    justify-content: center;
+}
+
+.contents ul li{
+    margin: 0.5rem 0;
+}
+
+.box_four ul li{
+    margin: 0.5rem 1rem;
+}
+
+.contents .box_four i{
+    border: 1px solid #fff;
+    border-radius: 50%;
+}
+
+.contents .box_four i:nth-child(1){
+    padding: 5px 9px;    
+}
+
+.contents .box_four i:not(.fa-facebook-f){
+    padding: 5px 6px;    
+}
+
+.content_04 .box_one ul li.brand_logo{
+    margin-bottom: 0.6rem;
+}
+
+.basic_input{
+    padding: 0.5rem;
+    border-radius: .2rem;
+    border: 1px solid #000;
+}
+
+.content_01 input{
+    width: 22vw;
+    border-top: 2px solid #00000038;
+    border-left: 2px solid #00000038;
+}
+
+
+.content_03 input{
+    width: 32vw;
+    margin-bottom: 0.5rem;
+    padding: 0.7rem;
+
+}
+
+
+
+.blue_button{
+    background: hsl(224, 93%, 58%);
+    padding: 0.6rem 2rem;
+    border: 0;
+    border-radius: 0.3rem;
+    color: #fff;
+}
+
+.see_link{
+    color:var(--moderate-cyan);
+    padding-bottom: 2px;
+    border-bottom: 2px solid;
+}
+
+.content_04 .contents div:not(.box_one){
+    margin: 4rem auto 1rem auto;
+}
+
+
+@media screen and (min-width:376px){
+
+ .content_01,.contents{
+    display:flex;
+}
+
+
+
+nav .right-links a{
+    padding: 2px 1.2em;
+}
+
+.content_01{
+    margin: 1rem auto;
+}
+
+.one{
+    order: 2;  
+}
+
+
+.content_03 .contents > div{
+    flex-basis: 40%;
+    justify-content: space-around
+}
+
+.content_03 .contents {
+    justify-content: space-between
+}
+
+.content_04 .contents {
+    /* justify-content: space-between */
+}
+
+
+
+}
+
+@media screen and (max-width:375px){
+
+    .centered{
+        text-align: center;
+    }
+
+    .content_01 input, .content_03 input{
+        width: 90%;
+        margin-bottom: 0.5rem;
+    }
+
+    .content_01 button, .content_03 button{
+        width: 96%;
+        margin: auto;
+    }
+
+    nav ul.right-links{
+        justify-content: space-around;
+    }
+
+    .margin_gap{
+        width:95%
+    }
+}
